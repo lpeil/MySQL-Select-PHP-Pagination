@@ -1,11 +1,11 @@
 <?php 
 //PAGINATION OPTIONS
 $page = $_GET['page'];
-if($page == null) {
+if($page == null) { //Check if have some page selected
     $page = 1;
 }
 $max_rows = 10; //The number of rows in one page
-$start = $page * $max_rows - $max_rows;
+$start = $page * $max_rows - $max_rows; //The start search in mysql
 
 //CONECTION
 $table = "tableName"; //Change for your table name
@@ -77,5 +77,5 @@ if($page + 4 <= $pages_number) {
 if($page > $pages_number) {
     echo ' <a href="#">&raquo;</a> ';
 } else {
-    echo ' <a href="?page='.($page + 1).'">&raquo;</a> '; // Next Page
+    echo ' <a href="?page='.($page + 1).'">&raquo;</a> '; //Next Page
 }
