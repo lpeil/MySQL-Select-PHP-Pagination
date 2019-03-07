@@ -1,2 +1,3 @@
-# mysql-select-php-pagination
-Select in MySQL and show in a PHP table with pagination
+# MySQL Select and PHP pagination
+
+Select in  your MySQL table and show in PHP with a simple pagination
