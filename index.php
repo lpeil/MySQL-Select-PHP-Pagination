@@ -10,7 +10,7 @@ $start = $page * $max_rows - $max_rows; //The start search in mysql
 //CONECTION
 $table = "tableName"; //Change for your table name
 $mysqli = mysqli_connect('host', 'user', 'password', 'database'); // Change for your data
-$select = mysqli_query($mysqli, "SELECT * FROM `$yourTable` LIMIT $start, $max_rows"); //Select in MySQL
+$select = mysqli_query($mysqli, "SELECT * FROM `$table` LIMIT $start, $max_rows"); //Select in MySQL
 
 //TABLE
 echo '<table>';
