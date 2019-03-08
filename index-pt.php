@@ -49,7 +49,7 @@ if($pagina == 1) {
     echo ' <a href="?pagina='.($pagina - 1).'">&laquo;</a> '; //Página antes
 }
 if($pagina - 3 > 0) {
-    echo ' <a href="?pagina=1">1</a> '; //First Page
+    echo ' <a href="?pagina=1">1</a> '; //Primeira página
     echo ' <span>...</span> ';
 }
 if($pagina - 2 > 0) {
@@ -59,7 +59,7 @@ if($pagina - 1 > 0) {
     echo ' <a href="?pagina='.($pagina - 1).'">'.($pagina - 1).'</a> '; //Página antes
 }
 
-echo ' <a href="#">'.$pagina.'</a> '; //Current Page
+echo ' <a href="#">'.$pagina.'</a> '; //Página atual
 
 if($pagina + 1 <= $num_paginas) {
     echo ' <a href="?pagina='.($pagina + 1).'">'.($pagina + 1).'</a> '; //Próxima página
